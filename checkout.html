@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mujiono</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->   
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300%7CRoboto+Condensed:400,400i,700,700i%7CGreat+Vibes" rel="stylesheet"> 
+        
+        <!-- Bootstrap Stylesheet -->   
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/fontawesome-v4-shims.min.css">
+            
+        <!-- Custom Stylesheets --> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/teal.css">
+        <!-- <link rel="stylesheet" href="css/orange.css"> -->
+        
+        <!-- Flex Slider Stylesheets -->    
+        <link rel="stylesheet" href="css/flexslider.css">
+        
+        <!-- OWL Stylesheets -->    
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+
+        <script src="js/cordova.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    
+    <body class="page-body">
+        
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+              
+        <!--=============== FULLSCR-NAV ==============-->
+        <div id="fullscr-nav" class="fullscr-navigation">
+            <button id="fullscr-close"><span><i class="fa fa-times"></i></span></button>
+            <ul class="list-unstyled">
+                <li><a href="index.html"><span><i class="fullscr-nav-icon fas fa-home"></i></span>Beranda</a><span class="border-shape"></span></li>
+                <li><a href="about.html"><span><i class="fullscr-nav-icon fas fa-info"></i></span>Tentang Kami</a><span class="border-shape"></span></li>
+                <li><a href="menu.html"><span><i class="fullscr-nav-icon fas fa-utensils"></i></span>Menu</a><span class="border-shape"></span></li>
+                <li><a href="shopping-cart.html"><span><i class="fullscr-nav-icon fas fa-shopping-cart"></i></span>Keranjang</a></li>
+                <li><a href="reservation.html"><span><i class="fullscr-nav-icon fa fa-truck"></i></span>Pengiriman</a></li>
+                <li><a href="contact.html"><span><i class="fullscr-nav-icon fas fa-phone"></i></span>Hubungi Kami</a></li>
+                <li><a href="login.html"><span><i class="fullscr-nav-icon fas fa-lock"></i></span>Masuk</a></li>
+                <!-- <li><a href="#" onclick="exitFromApp();"><span><i class="fullscr-nav-icon fas fa-sign-out-alt"></i></span>Keluar Aplikasi</a></li> -->
+            </ul>
+        </div><!-- end fullscr-nav -->
+        
+        <div class="canvas" id="mainpage">
+            
+            <!-- <div class="overlay-black"></div> -->
+            <div class="overlay-white"></div>
+            
+            <!--========= HEADER =========-->
+            <div class="header">
+                <div class="fixed-header">
+                    <div class="container-fluid">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="images/mujiono_logo_big.png" height="30px"></a>
+                            <!-- <a href="#"><h4><span><i class="far fa-star"></i>Res</span>taurant</h4></a> -->
+                        </div><!-- end header-logo -->
+                        
+                        <div class="header-links">
+                            <ul class="list-unstyled list-inline">
+                                
+                                <!-- <li class="list-inline-item shopping-cart"><a href="javascript:void(0)" id="shc-side-open"><span><i class="fa fa-shopping-cart"></i></span><span class="cart-badge">2</span></a></li>
+                                <li class="list-inline-item user-link"><a href="javascript:void(0)" id="usr-side-open"><span><i class="fa fa-user"></i></span></a></li> -->
+                                <!-- <li class="list-inline-item"><a href="javascript:void(0)" id="sidenav-open"><span><i class="fa fa-bars"></i></span></a></li> -->
+                                <li class="list-inline-item"><a href="javascript:void(0)" id="fullscr-open"><span><i class="fa fa-bars"></i></span></a></li>
+                            </ul>
+                        </div><!-- end header-links -->
+                    </div><!-- end container-fluid -->
+                </div><!-- end fixed-header -->
+            </div><!-- end header -->
+            
+            <!--========= PAGE-COVER =========-->
+            <div class="page-cover">
+                <div class="container-fluid">
+                    <h3><span class="cover-left-icon float-left"><i class="fa fa-dollar-sign"></i></span>Pembayaran<span class="cover-right-icon float-right"><i class="fa fa-dollar-sign"></i></span></h3>
+                </div><!-- end container-fluid -->
+            </div><!-- end page-cover -->
+            
+         
+            <!--=================== PAGE-WRAPPER ================-->
+            <section class="page-wrapper innerpage-section-padding">
+                <div id="checkout-page" >
+                    <div class="container-fluid">
+                        <div class="innerpage-heading text-center">
+                            <h3>Pesanan Anda</h3>
+                            <a href="shopping-cart.html" class="btn btn-orange"><i class="fa fa-shopping-cart"></i> Lihat Keranjang</a>
+                        </div><!-- end innerpage-heading -->
+                        
+                        <div class="order-list">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="order">
+                                        <div class="order-item">
+                                            <div class="order-item-info">
+                                                <h4><a href="#">Makanan-6</a></h4>
+                                                <p>Makanan Paket 6</p>
+                                                <p class="order-item-price"><span>Harga : Rp. 65K</span> , Qty : 1</p>
+                                            </div><!-- end order-item-info -->
+    
+                                            <div class="order-item-img">
+                                                <a href="#"><img src="images/dish-breakfast-6.png" class="img-fluid" alt="order-img" /></a>
+                                            </div><!-- end order-img -->
+                                        </div><!-- end order-item -->
+                                        
+                                        <div class="total">
+                                            <p>1 x Rp. 65K = <span>Rp. 65K</span></p>
+                                        </div><!-- end total -->
+                                    </div><!-- end order-->
+                                </li>
+                                
+                                <li>
+                                    <div class="order">
+                                        <div class="order-item">
+                                            <div class="order-item-info">
+                                                <h4><a href="#">Minuman-5</a></h4>
+                                                <p>Minuman Tipe 5</p>
+                                                <p class="order-item-price"><span>Harga : Rp. 33K</span> , Qty : 1</p>
+                                            </div><!-- end order-item-info -->
+    
+                                            <div class="order-item-img">
+                                                <a href="#"><img src="images/coffee-5.png" class="img-fluid" alt="order-img" /></a>
+                                            </div><!-- end order-img -->
+                                        </div><!-- end order-item -->
+                                        
+                                        <div class="total">
+                                            <p>1 x Rp. 33K = <span>Rp. 33K</span></p>
+                                        </div><!-- end total -->
+                                    </div><!-- end order-->
+                                </li>
+
+                                <li>
+                                    <div class="order">
+                                        <div class="order-item">
+                                            <div class="order-item-info">
+                                                <h4><a href="#">Tambahan-4</a></h4>
+                                                <p>Tambahan Tipe 4</p>
+                                                <p class="order-item-price"><span>Harga : Rp. 22K</span> , Qty : 1</p>
+                                            </div><!-- end order-item-info -->
+    
+                                            <div class="order-item-img">
+                                                <a href="#"><img src="images/ice-shake-4.png" class="img-fluid" alt="order-img" /></a>
+                                            </div><!-- end order-img -->
+                                        </div><!-- end order-item -->
+                                        
+                                        <div class="total">
+                                            <p>1 x Rp. 22K = <span>Rp. 22K</span></p>
+                                        </div><!-- end total -->
+                                    </div><!-- end order-->
+                                </li>
+                            </ul>
+                            <div class="cart-info text-center">
+                                <h4>Total Harga: <span>Rp. 120K</span></h4>
+                            </div><!-- end cart-info -->
+                        </div>
+                        
+                        <form class="custom-form"> 
+                            <h4>Isi Data Anda:</h4>
+                            <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Nama"  required/>
+                            </div>
+        
+                            <div class="form-group">
+                                 <input type="email" class="form-control" placeholder="Email"  required/>
+                            </div>
+                            
+                            <div class="form-group">
+                                 <input type="number" class="form-control" placeholder="Telepon"  required/>
+                            </div>
+                            
+                            <div class="form-group">
+                                 <select class="form-control">
+                                    <option selected>Pilih Jenis Pembayaran</option>
+                                    <option>GO PAY</option>
+                                    <option>OVO</option>
+                                    <option>DANA</option>
+                                    <option>Kartu Kredit</option>
+                                    <option>Transfer Bank</option>
+                                 </select>
+                            </div>
+                                                        
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Catatan Lain"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                                    <label class="custom-control-label" for="customCheck">Saya sudah membaca dan setuju dengan <a href="#">kondisi & peraturan</a> yang berlaku</label>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-orange btn-radius"><i class="fa fa-dollar-sign"></i> Bayar</button>
+                        </form>
+                    </div><!-- end container-fluid -->
+                </div><!-- end checkout-page -->
+            </section><!-- end page-wrapper -->
+            
+        </div><!-- end canvas -->
+        
+        
+   		<!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-flex.js"></script>
+        <script src="js/custom-owl.js"></script>
+        <!-- Page Scripts Ends -->
+    
+    </body>
+</html>

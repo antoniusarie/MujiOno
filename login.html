@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Mujiono</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->   
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300%7CRoboto+Condensed:400,400i,700,700i%7CGreat+Vibes" rel="stylesheet"> 
+        
+        <!-- Bootstrap Stylesheet -->   
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/fontawesome-v4-shims.min.css">
+            
+        <!-- Custom Stylesheets --> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/teal.css">
+        <!-- <link rel="stylesheet" href="css/orange.css"> -->
+        
+        <!-- Flex Slider Stylesheets -->    
+        <link rel="stylesheet" href="css/flexslider.css">
+        
+        <!-- OWL Stylesheets -->    
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+
+        <script src="js/cordova.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    
+    <body class="page-body">
+        
+        <!--====== LOADER =====-->
+        <div class="loader"></div>
+              
+        <!--=============== FULLSCR-NAV ==============-->
+        <div id="fullscr-nav" class="fullscr-navigation">
+            <button id="fullscr-close"><span><i class="fa fa-times"></i></span></button>
+            <ul class="list-unstyled">
+                <li><a href="index.html"><span><i class="fullscr-nav-icon fas fa-home"></i></span>Beranda</a><span class="border-shape"></span></li>
+                <li><a href="about.html"><span><i class="fullscr-nav-icon fas fa-info"></i></span>Tentang Kami</a><span class="border-shape"></span></li>
+                <li><a href="menu.html"><span><i class="fullscr-nav-icon fas fa-utensils"></i></span>Menu</a><span class="border-shape"></span></li>
+                <li><a href="shopping-cart.html"><span><i class="fullscr-nav-icon fas fa-shopping-cart"></i></span>Keranjang</a></li>
+                <li><a href="reservation.html"><span><i class="fullscr-nav-icon fa fa-truck"></i></span>Pengiriman</a></li>
+                <li><a href="contact.html"><span><i class="fullscr-nav-icon fas fa-phone"></i></span>Hubungi Kami</a></li>
+                <li><a href="login.html"><span><i class="fullscr-nav-icon fas fa-lock"></i></span>Masuk</a></li>
+                <!-- <li><a href="#" onclick="exitFromApp();"><span><i class="fullscr-nav-icon fas fa-sign-out-alt"></i></span>Keluar Aplikasi</a></li> -->
+            </ul>
+        </div><!-- end fullscr-nav -->
+        
+        <div class="canvas" id="mainpage">
+            
+            <!-- <div class="overlay-black"></div> -->
+            <div class="overlay-white"></div>
+            
+            <!--========= HEADER =========-->
+            <div class="header">
+                <div class="fixed-header">
+                    <div class="container-fluid">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="images/mujiono_logo_big.png" height="30px"></a>
+                            <!-- <a href="#"><h4><span><i class="far fa-star"></i>Res</span>taurant</h4></a> -->
+                        </div><!-- end header-logo -->
+                        
+                        <div class="header-links">
+                            <ul class="list-unstyled list-inline">
+                                
+                                <!-- <li class="list-inline-item shopping-cart"><a href="javascript:void(0)" id="shc-side-open"><span><i class="fa fa-shopping-cart"></i></span><span class="cart-badge">2</span></a></li>
+                                <li class="list-inline-item user-link"><a href="javascript:void(0)" id="usr-side-open"><span><i class="fa fa-user"></i></span></a></li> -->
+                                <!-- <li class="list-inline-item"><a href="javascript:void(0)" id="sidenav-open"><span><i class="fa fa-bars"></i></span></a></li> -->
+                                <li class="list-inline-item"><a href="javascript:void(0)" id="fullscr-open"><span><i class="fa fa-bars"></i></span></a></li>
+                            </ul>
+                        </div><!-- end header-links -->
+                    </div><!-- end container-fluid -->
+                </div><!-- end fixed-header -->
+            </div><!-- end header -->
+        
+            
+            <!--========= PAGE-COVER =========-->
+            <div class="page-cover">
+                <div class="container-fluid">
+                    <h3><span class="cover-left-icon float-left"><i class="fa fa-lock"></i></span>Masuk<span class="cover-right-icon float-right"><i class="fa fa-lock"></i></span></h3>
+                </div><!-- end container-fluid -->
+            </div><!-- end page-cover -->
+            
+         
+            <!--=================== PAGE-WRAPPER ================-->
+            <section class="page-wrapper innerpage-section-padding">
+                <div id="login-page" >
+                    <div class="container-fluid text-center">
+                        <div class="innerpage-heading">
+                            <h3>Login</h3>
+                            <p>Masuk ke Mujiono</p>
+                        </div><!-- end innerpage-heading -->
+                        
+                        <form class="custom-form"> 
+                            <div class="form-group">
+                                 <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Nama User / Email"  required/>
+                                    <div class="input-group-append">
+                                    	<span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                 </div>
+                            </div>
+        
+                            <div class="form-group">
+                                 <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="Sandi"  required/>
+                                    <div class="input-group-append">
+                                    	<span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-orange btn-radius"><i class="fa fa-sign-in-alt"></i> Login</button>
+                        </form>
+                        
+                        <div class="form-page-links">
+                            <a href="forgot-password.html">Lupa Sandi ?</a>
+                            <p> Member Baru ? <a href="register.html">Daftar</a></p>
+                        </div><!-- end form-page-links -->
+                        
+                        <div class="form-page-connect-social">
+                            <h4>Masuk Dengan</h4>
+                            <ul class="list-unstyled">
+                                <li><button class="btn btn-block fb"><span><i class="fab fa-facebook-f"></i></span>Facebook</button></li>
+                                <li><button class="btn btn-block gm"><span><i class="fab fa-google"></i></span>Gmail</button></li>
+                            </ul>
+                        </div><!-- end form-page-connect-social -->
+                    </div><!-- end container-fluid -->
+                </div><!-- end login-page -->
+            </section><!-- end page-wrapper -->
+            
+        </div><!-- end canvas -->
+        
+           
+   		<!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <script src="js/custom-flex.js"></script>
+        <script src="js/custom-owl.js"></script>
+        <!-- Page Scripts Ends -->
+    
+    </body>
+</html>
